@@ -18,7 +18,7 @@ namespace BSUIR_Lab_9_Task_1
             set 
             { 
                 if (value >= 0 && value <= MaxCargoWeight) cargoWeight = value;
-                else throw new ArgumentOutOfRangeException("Вес груза превышет грузоподъемность или указан некорректно."); 
+                else throw new ArgumentOutOfRangeException("Вес груза превышает грузоподъемность или указан некорректно."); 
             } 
 
         }
@@ -27,7 +27,7 @@ namespace BSUIR_Lab_9_Task_1
             get 
             {
                 if (CargoWeight == 0) return 0;
-                return CargoWeight *1 * 1000; // Время необходимое на разгрузку в милисекундах.
+                return CargoWeight *1 * 1000; // Время необходимое на разгрузку в миллисекундах.
             }
         }
 
@@ -62,8 +62,6 @@ namespace BSUIR_Lab_9_Task_1
                 return TempCargoWeight;
 
             }
-
-
         }
 
     }
